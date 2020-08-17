@@ -21,6 +21,8 @@ mongoose.connect(config.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: 
     .then(() => console.log(`Mongo DB Succesfully Connected`))
     .catch(err => console.log(err));
 
+// mongoose.connect("mongodb://localhost/resto-app", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: true });
+
 // use routes
 app.use(routes);
 
